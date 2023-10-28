@@ -7,6 +7,39 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gowundodumregular"
+        android:text="아이디 입력">
 
+    </TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gowundodumregular"
+        android:backgroundTint="#2196F3"
+        android:hint="아이디를 입력해 주세요.">
+
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gowundodumregular"
+        android:text="비밀번호 입력">
+
+    </TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gowundodumregular"
+        android:inputType="textPassword"
+        android:backgroundTint="#2196F3"
+        android:hint="비밀번호를 입력해 주세요.">
+
+    </EditText>
 
 </LinearLayout>
