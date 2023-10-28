@@ -5,15 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="15dp"
+    android:background="#F0F6F6"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:layout_marginLeft="140dp"
-        android:src="@drawable/youngjae">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
 
-    </ImageView>
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/youngjae">
+
+        </ImageView>
+    </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
@@ -26,10 +33,10 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/gowundodumregular"
-        android:inputType="textEmailAddress"
         android:backgroundTint="#2196F3"
-        android:hint="아이디는 이메일 양식 입니다.">
+        android:fontFamily="@font/gowundodumregular"
+        android:hint="아이디는 이메일 양식 입니다."
+        android:inputType="textEmailAddress">
 
     </EditText>
 
@@ -44,10 +51,10 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/gowundodumregular"
-        android:inputType="textPassword"
         android:backgroundTint="#2196F3"
-        android:hint="비밀번호는 8자 이상 입니다.">
+        android:fontFamily="@font/gowundodumregular"
+        android:hint="비밀번호는 8자 이상 입니다."
+        android:inputType="textPassword">
 
     </EditText>
 
@@ -62,12 +69,12 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/gowundodumregular"
-        android:inputType="textEmailAddress"
         android:backgroundTint="#2196F3"
-        android:singleLine="true"
+        android:fontFamily="@font/gowundodumregular"
+        android:hint="추천인을 입력해주세요(선택)"
         android:imeOptions="actionSearch"
-        android:hint="추천인을 입력해주세요(선택)">
+        android:inputType="textEmailAddress"
+        android:singleLine="true">
 
     </EditText>
 
@@ -78,34 +85,36 @@
         android:text="성별">
 
     </TextView>
-<RadioGroup
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal">
-    <RadioButton
+
+    <RadioGroup
         android:layout_width="wrap_content"
-        android:fontFamily="@font/gowundodumregular"
         android:layout_height="wrap_content"
-        android:text="남성">
+        android:orientation="horizontal">
 
-    </RadioButton>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gowundodumregular"
+            android:text="남성">
 
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:fontFamily="@font/gowundodumregular"
-        android:layout_height="wrap_content"
-        android:text="여성">
+        </RadioButton>
 
-    </RadioButton>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gowundodumregular"
+            android:text="여성">
 
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:fontFamily="@font/gowundodumregular"
-        android:layout_height="wrap_content"
-        android:text="공개하지 않음">
+        </RadioButton>
 
-    </RadioButton>
-</RadioGroup>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gowundodumregular"
+            android:text="공개하지 않음">
+
+        </RadioButton>
+    </RadioGroup>
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -133,8 +142,8 @@
         android:layout_height="wrap_content"
         android:backgroundTint="#E3BBEA"
         android:fontFamily="@font/gowundodumregular"
-        android:textColor="@color/black"
-        android:text="회원 가입 완료">
+        android:text="회원 가입 완료"
+        android:textColor="@color/black">
 
     </Button>
 
