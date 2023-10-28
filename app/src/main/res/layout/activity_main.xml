@@ -19,8 +19,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/gowundodumregular"
+        android:inputType="textEmailAddress"
         android:backgroundTint="#2196F3"
-        android:hint="아이디를 입력해 주세요.">
+        android:hint="아이디는 이메일 양식 입니다.">
 
     </EditText>
 
@@ -38,7 +39,27 @@
         android:fontFamily="@font/gowundodumregular"
         android:inputType="textPassword"
         android:backgroundTint="#2196F3"
-        android:hint="비밀번호를 입력해 주세요.">
+        android:hint="비밀번호는 8자 이상 입니다.">
+
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gowundodumregular"
+        android:text="추천인의 이름(선택)">
+
+    </TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gowundodumregular"
+        android:inputType="textEmailAddress"
+        android:backgroundTint="#2196F3"
+        android:singleLine="true"
+        android:imeOptions="actionSearch"
+        android:hint="추천인을 입력해주세요(선택)">
 
     </EditText>
 
